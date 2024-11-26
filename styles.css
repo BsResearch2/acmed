@@ -98,7 +98,7 @@ header {
 
 /* Error Message (Red) */
 .error {
-    color: #333;
+    color: #ffff00;
     background-color: #fff9c4;
     font-weight: 500;
 }
