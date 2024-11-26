@@ -98,8 +98,8 @@ header {
 
 /* Error Message (Red) */
 .error {
-    color: #ffff00;
-    background-color: #fff9c4;
+    color: #ff7f00;
+    background-color: #ffff00;
     font-weight: 500;
 }
 
