@@ -91,8 +91,8 @@ header {
 
 /* Warning Message (Yellow) */
 .warning {
-    color: #333; /* Dark gray text */
-    background-color: #fff9e6; /* Light yellow background */
+    color: #ff7f00; /* Dark gray text */
+    background-color: #ffff00; /* Light yellow background */
     font-weight: 500;
 }
 
