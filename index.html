@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Influencer Simulation</title>
+    <link rel="stylesheet" href="styles_medium.css">
+</head>
+<body>
+    <header>
+        <img src="generic-logo.png" alt="Generic Logo" class="generic-logo">
+        <h1>Lifestyle Influencer Platform</h1>
+    </header>
+
+    <!-- Create Post Section -->
+    <section id="create-post" class="post-form">
+        <h2>Create a Post</h2>
+        <p>
+            Write a story about yourself, including hobbies, profession, or opinions. 
+            <strong>WE RECOMMEND THAT  <span style="font-weight: bold;">YOU USE AT LEAST THREE</span></strong> of the suggested hashtags: 
+            <span style="color: blue;">#livingmybestlife</span>, 
+            <span style="color: blue;">#hustleculture</span>, 
+            <span style="color: blue;">#riseandgrind</span>, 
+            <span style="color: blue;">#nofilter</span>, 
+            <span style="color: blue;">#selfmade</span>, 
+            <span style="color: blue;">#goodvibesonly</span>, 
+            <span style="color: blue;">#goals</span>, 
+            <span style="color: blue;">#influencerlife</span>, 
+            <span style="color: blue;">#grateful</span>, 
+            <span style="color: blue;">#workhardplayhard</span>, 
+            <span style="color: blue;">#fitfam</span>, 
+            <span style="color: blue;">#bodygoals</span>, 
+            <span style="color: blue;">#successmindset</span>, 
+            <span style="color: blue;">#girlboss</span>, 
+            <span style="color: blue;">#bossbabe</span>, 
+            <span style="color: blue;">#luxurylife</span>, 
+            <span style="color: blue;">#adulting</span>.
+        </p>        
+
+        <textarea id="post-content" placeholder="Write your story..."></textarea>
+        <button id="submit-post" disabled>Post</button>
+    </section>
+
+    <!-- Feed Section -->
+    <section id="feed" class="feed">
+        <h2>Your Feed</h2>
+        <div id="post-feed"></div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback-section">
+        <h2>Feedback</h2>
+        <p>Percentage Reach: <span id="feedback-message">0.0</span></p>
+        <p>Engagement Score: <span id="engagement-score">0.0</span></p>
+        <p>Ad Revenue: <span id="reward-message">$0.00</span></p>
+    </section>
+
+    <!-- Revision Section -->
+    <section id="revision-section" class="hidden">
+        <h2>Revise Your Post</h2>
+        <p>
+            You have the opportunity to revise your story to align with trending topics. 
+            <strong>YOU MAY USE THREE OF THE SUGGESTED HASHTAGS</strong> to make it more engaging!: 
+            <span style="color: blue;">#livingmybestlife</span>, 
+            <span style="color: blue;">#hustleculture</span>, 
+            <span style="color: blue;">#riseandgrind</span>, 
+            <span style="color: blue;">#nofilter</span>, 
+            <span style="color: blue;">#selfmade</span>, 
+            <span style="color: blue;">#goodvibesonly</span>, 
+            <span style="color: blue;">#goals</span>, 
+            <span style="color: blue;">#influencerlife</span>, 
+            <span style="color: blue;">#grateful</span>, 
+            <span style="color: blue;">#workhardplayhard</span>, 
+            <span style="color: blue;">#fitfam</span>, 
+            <span style="color: blue;">#bodygoals</span>, 
+            <span style="color: blue;">#successmindset</span>, 
+            <span style="color: blue;">#girlboss</span>, 
+            <span style="color: blue;">#bossbabe</span>, 
+            <span style="color: blue;">#luxurylife</span>, 
+            <span style="color: blue;">#adulting</span>.
+        </p>        
+        <textarea id="revision-content" placeholder="Revise your story..."></textarea>
+        <button id="submit-revision" disabled>Submit Revision</button>
+    </section>
+
+    <!-- Post and Revised Posts Display Section -->
+<section id="post-pairs" class="hidden">
+    <h2>Post-Revised Pairs</h2>
+    <div id="post-pairs-container"></div>
+</section>
+
+<button id="download-data-btn">Download Post Data</button>
+
+    <script src="script_medium.js"></script>
+</body>
+</html>

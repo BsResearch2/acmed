@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.generic-logo {
+    height: 40px;
+    width: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Feed Section */
+.feed {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Posts aligned to the left within the feed */
+#post-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Post Styles */
+.post {
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    padding: 10px;
+}
+
+/* Image Styles for Uploaded Images */
+.post img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* Recommendation Section */
+.recommendation {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #1565c0;
+}
+
+/* Reward Message Styling for Ad Revenue Feedback */
+.reward-message {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Success Message (Green) */
+.success {
+    color: #388e3c;
+    background-color: #e8f5e9;
+    font-weight: 500;
+}
+
+/* Warning Message (Yellow) */
+.warning {
+    color: #333; /* Dark gray text */
+    background-color: #fff9e6; /* Light yellow background */
+    font-weight: 500;
+}
+
+/* Error Message (Red) */
+.error {
+    color: #333;
+    background-color: #fff9c4;
+    font-weight: 500;
+}
+
+/* Feedback Labels Styling */
+#feedback-message,
+#engagement-score,
+#ad-revenue {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px; /* Adding padding for better readability */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+/* Bold styling for labels */
+.feedback-label {
+    font-weight: bold;
+}
+
+/* Info Restriction */
+.info-restriction {
+    font-size: 14px;
+    color: #ff9800;
+    background-color: #fff3e0;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Text Area and Button Styles */
+textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #42a5f5;
+}
+
+button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:disabled {
+    background-color: #c4e1f7;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #007bb5;
+}
+
+/* Feedback Message with Conditional Colors */
+#feedback-message {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Analytics Section */
+#analytics-section {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #dbdbdb;
+}
+
+/* Comparison Result */
+#comparison-result {
+    color: #ff5722;
+    margin-top: 10px;
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none;
+}
+
+#download-data-btn {
+    display: none; /* This keeps the button hidden */
+}
