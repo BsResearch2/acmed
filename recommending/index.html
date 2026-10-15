@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creator Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">C</div>
+      <div>
+        <div class="brand-name">Creator Studio</div>
+        <div class="brand-subtitle">Content Creator Platform</div>
+      </div>
+    </div>
+    <div class="profile-chip">
+      <div class="avatar small">YOU</div>
+      <span>Your creator account</span>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section id="intro-screen" class="screen active">
+      <div class="hero-card">
+        <div class="avatar large">YOU</div>
+        <div>
+          <p class="eyebrow">YOUR CREATOR ACCOUNT</p>
+          <h1>Create a post for your audience</h1>
+          <p class="lead">
+            Imagine that this is your creator account. The content you create represents how you present yourself to your audience.
+          </p>
+          <p>
+            Create a post that introduces something about yourself—your interests, experiences, perspective, or something that matters to you.
+          </p>
+          <button id="start-btn" class="primary">Create a Post</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="compose-screen" class="screen">
+      <div class="layout">
+        <div class="composer-card">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">NEW POST</p>
+              <h2>Create your post</h2>
+            </div>
+            <span id="word-count" class="word-count">0 words</span>
+          </div>
+
+          <label for="headline">Headline or opening line</label>
+          <input id="headline" type="text" maxlength="120" placeholder="Write an opening line..." />
+
+          <label for="post-body">Your post</label>
+          <textarea id="post-body" rows="10" placeholder="Share something about yourself, your experiences, interests, or perspective..."></textarea>
+
+          <label for="hashtags">Hashtags <span class="optional">(optional)</span></label>
+          <input id="hashtags" type="text" placeholder="#example #creator" />
+
+          <div class="image-row">
+            <div>
+              <strong>Post image</strong>
+              <p class="muted">Optional. Choose a placeholder image for your post.</p>
+            </div>
+            <button id="toggle-image-btn" class="secondary" type="button">Add Image</button>
+          </div>
+          <div id="image-placeholder" class="image-placeholder hidden" aria-label="Selected post image">
+            <div class="image-icon">◎</div>
+            <span>Image selected</span>
+          </div>
+
+          <div class="composer-actions">
+            <button id="preview-btn" class="primary" disabled>Preview Post</button>
+          </div>
+        </div>
+
+        <aside class="recommendation-card">
+          <div class="recommendation-title-row">
+            <div class="ai-badge">AI</div>
+            <div>
+              <h3>Creator Recommendations</h3>
+              <p>Generated from current creator-performance patterns</p>
+            </div>
+          </div>
+          <div class="recommendation-explainer">
+            These recommendations are designed to help creators improve reach and engagement. You can choose whether or not to follow them.
+          </div>
+          <div id="recommendation-list" class="recommendation-list"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="preview-screen" class="screen">
+      <div class="preview-layout">
+        <div>
+          <p class="eyebrow">POST PREVIEW</p>
+          <h2>Review your post</h2>
+          <p class="muted">This is how your post will appear to your audience.</p>
+        </div>
+
+        <article class="social-post">
+          <div class="post-author">
+            <div class="avatar small">YOU</div>
+            <div>
+              <strong>Your Creator Account</strong>
+              <div class="muted tiny">Creator · Just now</div>
+            </div>
+          </div>
+          <h3 id="preview-headline"></h3>
+          <p id="preview-body" class="post-body"></p>
+          <div id="preview-image" class="preview-image hidden">
+            <div class="image-icon large-icon">◎</div>
+          </div>
+          <p id="preview-hashtags" class="hashtags"></p>
+          <div class="fake-actions">
+            <span>♡ Like</span><span>○ Comment</span><span>↗ Share</span>
+          </div>
+        </article>
+
+        <div class="preview-actions">
+          <button id="edit-btn" class="secondary">Back to Edit</button>
+          <button id="publish-btn" class="primary">Publish Post</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="published-screen" class="screen">
+      <div class="success-card">
+        <div class="success-icon">✓</div>
+        <h2>Your post has been published</h2>
+        <p>Thank you for completing the content-creation task.</p>
+      </div>
+
+      <div id="debug-tools" class="debug-tools hidden">
+        <button id="download-data-btn" class="secondary">Download Session JSON</button>
+        <button id="reset-btn" class="secondary">Reset Simulation</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
